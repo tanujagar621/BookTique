@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(73, 42, 48);
+    color: aliceblue;
+}
+header {
+    margin: 1rem 10px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 2rem;
+    color: rgb(163, 214, 44);
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid rgb(218, 192, 192);
+    border-radius: 70px;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+nav ul li a:hover {
+    transition: linear 0.3s;
+    background-color: rgb(184, 174, 184);
+    border-radius: 5px;
+    color: rgb(49, 70, 68);
+}
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.errorMsg {
+    color: red;
+    width: fit-content;
+    margin: 1rem auto;
+    font-size: 2rem;
+    background-color: rgb(207, 196, 188);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+.heading {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.search-form {
+   min-height: 20vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* flex-wrap: wrap; */
+}
+label {
+    width: fit-content;
+}
+input, select, textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+}
+.field {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    text-align: start;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 1.4rem;
+    background-color: cyan;
+    border: 1px solid brown;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0.5rem auto;
+}
+.authors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.author {
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(156, 104, 104);
+}
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.book {
+    margin: 0.5rem;
+    border: 2px solid yellow;
+}
+.book img {
+    height: 200px;
+    width: 150px;
+}
+.btns {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
