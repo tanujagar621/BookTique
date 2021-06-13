@@ -16,11 +16,16 @@
 </form>
 <br>
 <div>
-    <h2>All Books</h2>
+    <h2 class="heading">All Books</h2>
     <div class="books">
-        <% books.forEach(book => { %>
+        <% books.forEach(book=> { %>
             <div class="book">
                 <img height="150" width="100" src="<%= book.coverImagePath %> ">
+                <div class="title">
+                    <h2>
+                        <%= book.title %>
+                    </h2>
+                </div>
             </div>
         <% }); %>
     </div>
