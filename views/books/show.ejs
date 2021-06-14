@@ -1,0 +1,25 @@
+<h2 class="heading" style="color: brown;"><%= book.title %></h2>
+<div class="row">
+    <div class="img">
+        <img src="<%= book.coverImagePath%>" alt="book">
+    </div>
+    <div class="book-details">
+        <div><b>Author : </b><span><%= book.author.name %></span></div>
+        <div><b>Publish Date : </b><span><%= book.publishDate.toDateString() %></span></div>
+        <div><b>Page Count : </b><span><%= book.pageCount %></span></div>
+        <% if(book.description != null || book.description !== '') { %> 
+        <div class="desc">
+            <div><b>Description : </b></div>
+            <div class="desc-content"><%= book.description %></div>
+        </div>
+        <% } %> 
+    </div>
+</div>
+<div class="btns">
+    <a href="/books/" class="btn">All Books</a>
+    <a href="/authors/<%= book.author.id %>" class="btn">View Author</a>
+    <a href="/books/<%= book.id %>/edit " class="btn">Edit</a>
+    <%- include('../partials/_deleteForm', {url: `/books/${book.id}`}) %>
+</div>
+
+
