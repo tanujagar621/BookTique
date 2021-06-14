@@ -3,12 +3,14 @@
     <div class="books">
         <% books.forEach(book=> { %>
             <div class="book">
-                <img height="150" width="100" src="<%= book.coverImagePath %> ">
-                <div class="title">
-                    <h2>
-                        <%= book.title %>
-                    </h2>
-                </div>
+                <a href="/books/<%= book.id %>">
+                    <img height="150" width="100" src="<%= book.coverImagePath %> ">
+                    <div class="title">
+                        <h2>
+                            <%= book.title %>
+                        </h2>
+                    </div>
+                </a>
             </div>
         <% }); %>
     </div>

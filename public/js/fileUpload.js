@@ -11,6 +11,3 @@ FilePond.create({
   imageResizeTargetHeight: 150,
 });
 FilePond.parse(document.body);
-// window.addEventListener('scroll', () => {
-//     console.log('scroll');
-// })
