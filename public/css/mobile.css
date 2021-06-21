@@ -1,0 +1,55 @@
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        margin: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.3rem auto;
+        width: 40%;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 0.3rem;
+    }
+    .author {
+        width: 80%;
+    }
+    .field {
+        width: 80%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .btns {
+        text-align: ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .btn {
+        width: 49%;
+        text-align: center;
+    }
+    /* .delete-btn button {
+        width: 65%;
+    } */
+    .book {
+        width: 60vw;
+    }
+}
+@media screen and (max-width:400px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+}
