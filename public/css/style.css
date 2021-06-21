@@ -157,7 +157,7 @@ input, select, textarea {
     margin: 0.5rem;
     border: 2px solid yellow;
     width: 250px;
-    min-height: 250px;
+    min-height: 300px;
     word-wrap: break-word;
 }
 .book img {
@@ -167,9 +167,9 @@ input, select, textarea {
     padding: 3px;
     border: 1px solid salmon;
 }
-.delete-btn {
+/* .delete-btn {
     display: inline;
-}
+} */
 .title {
     margin: 5px;
     color: silver;
